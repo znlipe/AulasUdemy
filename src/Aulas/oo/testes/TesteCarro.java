@@ -26,5 +26,8 @@ public class TesteCarro {
         c2.getVelocidadeAtual();
         c2.desligarAr();
 
+        //testando o metodo default de Luxo.
+        System.out.println(c2.velocidadeDoAr());
+
     }
 }
