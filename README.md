@@ -1,2 +1,3 @@
 # AulasUdemy
 Repositório para fins de estudo onde aloco todos os meus códigos de estudo de lógicas, paradigmas ...
+O Package "Testes" possui a classe "main" de cada package especifico deste projeto.
