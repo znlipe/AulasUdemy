@@ -16,9 +16,11 @@ public class Foreach {
         }
 
         System.out.println("\nLambda #01...");
+        //utilizacao do lambda para foreach o torna mais flexivel, com possibilidade de concatenacoes como é o exemplo do "!"
         aprovados.forEach(nome -> System.out.println(nome + "!"));
 
         System.out.println("\nMethod Reference...");
+        // utilizando a referencia de metodo acaba tornando-o menos flexivel frente ao lambda.
         aprovados.forEach(System.out::println);
 
     }
