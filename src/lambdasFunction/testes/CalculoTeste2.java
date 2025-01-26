@@ -23,5 +23,9 @@ public class CalculoTeste2 {
         calc = (x, y) -> x * y;
         System.out.println(calc.calcular(2, 5));
 
+        //aqui eu chamo os metodos default e static da interface so para fins de conhecimento
+        System.out.println(calc.defaultMethod());
+        System.out.println(Calculo.staticMethod());
+
     }
 }
