@@ -19,9 +19,22 @@ public class Foreach {
         //utilizacao do lambda para foreach o torna mais flexivel, com possibilidade de concatenacoes como é o exemplo do "!"
         aprovados.forEach(nome -> System.out.println(nome + "!"));
 
-        System.out.println("\nMethod Reference...");
+        System.out.println("\nMethod Reference #01...");
         // utilizando a referencia de metodo acaba tornando-o menos flexivel frente ao lambda.
         aprovados.forEach(System.out::println);
 
+        System.out.println("\nLambda #02...");
+        //Apos criacao do metodo static, utilizei ele no lambda para concatenar com um texto de apresentacao.
+        aprovados.forEach(nome -> meuImprimir(nome));
+
+        System.out.println("\nMethod Reference #02...");
+        //Ja nesse caso, utilizo referencia de metodo para chamar o metodo static criado para passar pelos aprovados.
+        aprovados.forEach(Foreach::meuImprimir);
+
     }
+
+    static void meuImprimir(String nome) {
+        System.out.println("Oi, me chamo: " + nome);
+    }
+
 }
